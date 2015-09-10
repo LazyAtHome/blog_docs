@@ -41,14 +41,20 @@ ID, Long
 
 API design:
 
+http://127.0.0.1:8080/
+
 /users/login
 /users/logout
 
 /blogs/(create,update,delete,id)
 
-/blogs (create,post, update, put, delete, delete)
-/blogs/all (?page=xx&limited=xx  pagination)
-/blogs/{id} (get a post)
+
+
+/blogs (create,post request)
+/blogs/all (?page=xx&limited=xx  pagination, get request)
+/blogs/{id} (get a post, get request)
+/blogs/{id} (update, put request)
+/blogs/{id} (delete, delete request)
 
 
 Generate API Doc
@@ -78,7 +84,6 @@ httpd status 200
   .. 
 }
  
-
 
 
 
